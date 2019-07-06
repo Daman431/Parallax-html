@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4 {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("3.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("OM.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("original.gif");
+  min-height: 400px;
+}
+.bgimg-4 {
+  background-image: url("giphy.gif");
+  min-height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  padding-top: 40px;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+.caption1 {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  padding-top: 175px;
+}
+
+.caption1 span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4 {
+        background-attachment: scroll;
+    }
+}
+
+header{
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    margin-bottom: 1000px;
+    overflow: hidden;
+}
+
+.header-bg{
+    position: absolute;
+    width: 1500px;
+    height: 1000px;;
+    background-image: url(3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background:#0079a5;
+}
+
+.center{
+    position: absolute;
+    top: 50%
+    transform:translate(-50%,-50%);
+    width: 0;
+    height: 160px;
+    
+}
+
+.arrow{
+    position: absolute;
+    top:0;
+    left:660px;
+    height: 40px;
+    width: 6px;
+    background:#fff;
+    animation: animate 2s infinite;
+    float: left;
+    
+}
+
+.arrow:before{
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+width: 20px;
+height: 20px;
+border-bottom:6px solid #fff;
+border-right: 6px solid #fff;
+transform: rotate(45deg);
+}
+
+@keyframes animate{
+    0%{
+        transform:translateY(0);
+        opacity: 0.5;
+    }
+    50%{
+        transform:translateY(80px);
+        opacity: 1;
+    }
+    100%{
+        transform:translateY(160px);
+        opacity: 0;
+    }
+}
+h3{
+    color: white;
+}
+hr{
+  width: 300px;
+  height: 2px;
+  color: red;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    color: black;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+</head>
+<body>
+<div class="bgimg-1">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="FeedBack.html">FeedBack</a>
+</div>
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+</div>
+  <div class="caption1">
+    <span class="border">SWACH BHARAT<div class="arrow"></div></span>
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h1 style="text-align:left; color:BLACK" >
+
+SWACH BHARAT ABHIYAN<hr color="#c90c2b " align="left" ></h1>
+  <p>Swachh Bharat Abhiyan (SBA) (or Swachh Bharat Mission (SBM) or Clean India Mission in English) is a campaign in India that aims to clean up the streets, roads and infrastructure of India's cities, smaller towns, and rural areas. The objectives of Swachh Bharat include eliminating open defecation through the construction of household-owned and community-owned toilets and establishing an accountable mechanism of monitoring toilet use. Run by the Government of India, the mission aims to achieve an Open-Defecation Free (ODF) India by 2 October 2019, the 150th anniversary of the birth of Mahatma Gandhi, by constructing 12 million toilets in rural India at a projected cost of ₹1.96 lakh crore (US$30 billion).
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><span class="border"><font size="6px">Contribution Of DAV</font></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+<H1>DAV PUBLIC SCHOOL</H1>
+<HR color="#c90c2b " align="left">
+<P>
+  School swachhta abhiyan- my clean & green school campaign During the Swachh Bharat Swachh Vidyalaya Campaign 2014-15, initiated by the HRD Ministry, Govt. of India, our school registered in the Online Sanitation Rating with school sanitation and was placed under ‘Blue’ category which implies ‘Very Good’. Taking Swachh Bharat Campaign initiative a step ahead, students of DAV Public School, NH-3 FARIDABAD undertook hygiene and sanitation related activities to ensure that the vicinity around their school and residence is kept clean
+</P>
+</div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;"><span class="border"><font size="6px">STATISTICS</font></span></span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#333;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <ul><b>
+        <li>In rural areas, 45.3% households reported to have sanitary toilets.</li>
+        <li>36.8% wards in urban areas reported to have a proper liquid waste disposal system for
+community/public toilets</li>
+        <li>56.4% wards reported to have sewer network for disposal of liquid waste.</li>
+        <li>78.1% wards reported to have a system of street cleaning.</li>
+    </ul>
+    </b>
+  </div>
+</div>
+
+<div class="bgimg-4">
+  <div class="caption">
+    <span class="border">Thank you for visiting us</span>
+  </div>
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+</body>
+</html>
